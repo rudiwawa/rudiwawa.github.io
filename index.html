@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Club Finder</title>
+<link href="styles.css" rel="stylesheet"></head>
+
+<body class="min-h-screen">
+  <header>
+    <app-bar label="COVID 19 INDONESIA" />
+  </header>
+  <main class="pt-6">
+    <app-subtitle label="Total di Dunia"></app-subtitle>
+    <div class=" body w-11/12 lg:w-5/6 mx-auto clearfix">
+      <app-card-list></app-card-list>
+    </div>
+    <app-subtitle label="Indonesia VS Tetangga"></app-subtitle>
+    <div
+      class="md:p-6 h-auto box shadow-md mb-24 body w-11/12 lg:w-5/6 mx-auto clearfix bg-white bg-opacity-25   rounded-lg h-auto md:border-t-2 md:border-r-2 border-white border-opacity-25">
+
+      <div class=" box shadow-md flex flex-wrap rounded-md bg-black bg-opacity-50  p-0">
+        <div class="lg:w-4/6 md:w-4/6 w-full    p-6  lg:h-auto bg-white  rounded-md">
+          <canvas id="myChart" class=""></canvas>
+        </div>
+        <div class=" relative lg:w-2/6 md:w-2/6 w-full   h-auto p-6 text-white">
+          <search-bar></search-bar>
+          <country-list class="block mb-6"></country-list>
+
+          <radio-button class="absolute bottom-0 right-0 pl-4 pr-2 pb-4 text-white"></radio-button>
+
+        </div>
+      </div>
+
+    </div>
+  </main>
+<script type="text/javascript" src="bundle.js"></script></body>
+
+</html>
